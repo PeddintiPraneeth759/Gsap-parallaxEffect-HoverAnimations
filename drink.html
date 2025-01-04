@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  *{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .main{
+    width: 100%;
+    height: 100vh;
+  
+  }
+  body{
+    font-family: "Karla", sans-serif;
+ overflow: hidden;
+  overflow-y: scroll;
+  
+  }
+  nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+   padding: 0vw 10vw;
+   color: white;
+   z-index: 100;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+   
+  }
+  nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+  }
+  nav a:hover{
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+  }
+  nav .cntr-nav a{
+    margin: 0 20px;
+  }
+.one{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background:linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+#fanta{
+    position: absolute;
+    width: 220px;
+  z-index: 2;
+    
+}
+#orange-piece{
+  z-index: 1;
+  position: absolute;
+  width: 22%;
+  top: 10%;
+  left: 32%;
+}
+#orange-two{
+  z-index: 3;
+  position: absolute;
+  width: 20%;
+  top: 55%;
+  left: 45%;
+}
+.one h1{
+  font-size: 20vw;
+  color: white;
+
+   letter-spacing: 3px;
+}
+#leaf{
+  width: 10%;
+  position: absolute;
+  left: 20%;
+  z-index: 1;
+}
+#leaf-two{
+  width: 10%;
+  position: absolute;
+  left: 70%;
+  z-index: 3;
+}
+.two{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.partOne{
+ 
+}
+.partOne,.part-two{
+width: 50%;
+height: 100%;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+flex-direction: column;
+gap:5vh;
+}
+.part-two h1{
+  font-size: 4vw;
+  color: white;
+}
+.part-two p{
+  color: white;
+  width: 80%;
+  
+}
+.three{
+ 
+  width: 100%;
+  height: 100vh;  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  background:linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+.card{
+  width: 25vw;
+  height: 70%;
+  margin-top: 10vw;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Dancing Script", cursive;
+position: relative;
+}
+.card h1{
+  margin-top: 40vh;
+}
+.card button{
+  margin-top: 10px;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  background:linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0)) ;
+  cursor: pointer;
+}
+#pepsiimg{
+  top: -20%;
+  position: absolute;
+width:700px;
+}
+#coce{
+  top: -15%;
+  position: absolute;
+width:280px;
+
+}
+#orange1{
+  top: -25%;
+  left: 6%;
+  position: absolute;
+width:200px;
+}
+#orange2{
+  top: -25%;
+  right: 6%;
+  position: absolute;
+width:200px;
+}
+</style>
+<body>
+  <div class="main">
+    <nav>
+      <a href="#">Logo</a>
+      <div class="cntr-nav">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+        <a href="#">Shop</a>
+      </div>
+      <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="one">
+      <h1>FANTA</h1>
+  <img id="fanta" src="images__1_-removebg-preview.png" alt="">
+  <img id="orange-piece" src="orangemukka-removebg-preview.png" alt="">
+  <img id="orange-two" src="orange-removebg-preview.png" alt="">
+  <img id="leaf" src="Green-Leaf-on-transparent-background-PNG-removebg-preview.png" alt="">
+  <img id="leaf-two" src="leaf-removebg-preview.png" alt="">
+    </div>
+
+    <div class="two">
+<div class="partOne">
+
+</div>
+<div class="part-two">
+<h1>Taste The Flavour</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis vero pariatur quisquam sequi nisi praesentium ea explicabo fugit ullam aut facere voluptatem mollitia, ipsa dicta eligendi illo blanditiis non eum molestias amet reiciendis laudantium veritatis? Veritatis praesentium, consequatur numquam quisquam harum rerum accusamus autem tempora iure alias recusandae molestiae ut atque! Aliquam deserunt omnis tenetur necessitatibus, eveniet molestiae quidem magnam autem excepturi, voluptas suscipit corrupti dicta dolores quas temporibus voluptatum voluptatem nam esse ab, assumenda quibusdam molestias. Dignissimos maiores rerum consectetur quo consequuntur. Quos facilis nulla aspernatur optio, ipsam libero voluptatem corrupti animi dolorem earum. Eligendi placeat voluptatibus esse praesentium!</p>
+</div>
+    </div>
+    <div class="three">
+        <div class="card" >
+          <img id="orange1" src="orangemukka-removebg-preview.png" alt="">
+          <img id="pepsiimg" src="pepsi-removebg-preview.png" alt="">
+          <h1 class="opacity">pepsi</h1>
+          <button class="opacity" style="background: linear-gradient(89.8deg, rgb(39, 115, 255) 4.3%, rgb(62, 211, 232) 101.4%);">Buy Now</button>
+        </div>
+        <div class="card">
+          <h1>Fanta</h1>
+          <button>Buy Now</button>
+        </div>
+        <div class="card">
+          <img id="orange2" src="orangemukka-removebg-preview.png" alt="">
+          <img id="coce" src="coca-cola-removebg-preview.png" alt="">
+          <h1>coca-cola</h1>
+          <button style="background-color: #ff7878;
+          background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%);
+          ">Buy Now</button>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+/*
+gsap.from("#pepsiimg", 
+{x:-1000, 
+  rotation:90,
+   duration:3,
+  delay:1,
+});
+
+   gsap.from("#orange1",{
+   x:-1000 ,
+   rotation:90,
+   duration:4,
+   delay:1
+   });
+
+
+
+   gsap.from("#coce", 
+{x:1000, 
+  rotation:90,
+   duration:3,
+  delay:1});
+
+   gsap.from("#orange2",{
+   x:1000 ,
+   rotation:90,
+   duration:4,
+   delay:1
+   });
+   
+   gsap.from(".opacity",{
+    y:40,
+    
+    duration: 3,
+    opacity:0,
+stagger:.5
+   });
+*/
+gsap.from("nav",
+{
+  y: -200,
+  delay:1,
+  ease:"bounce",
+  duration:2
+
+});
+var t1 = gsap.timeline(
+  {scrollTrigger:{
+  trigger:".two",
+  start:"0% 95%",
+  end:"50% 50%",
+  scrub:true,
+  
+markers:true
+}});
+
+t1.to("#fanta",{
+  top:"120%",
+  left:"5%",
+})
+
+t1.to("#orange-piece",{
+  top:"150%",
+  left:"10%",
+  rotate:360
+},"<")
+
+t1.to("#leaf",{
+  top:"110%",
+  left:"83%",
+
+},"<")
+
+t1.to("#leaf-two",{
+  top:"110%",
+  left:"12%",
+    rotate:"180deg"
+},"<")
+
+
+
+var t2 = gsap.timeline({scrollTrigger:{
+  trigger:".three",
+  start:"0% 95%",
+  end:"20% 50%",
+  scrub:true,
+  
+
+}});
+
+
+
+
+
+t2.from("#pepsiimg", 
+{x:-1000, 
+  rotation:-90,
+   duration:3,
+  ease:"linear"
+},"<");
+
+
+t2.from("#orange1",{
+   x:-1000 ,
+   rotation:360,
+   duration:3,
+   delay:.3,
+   ease:"linear"
+   },"<");
+
+
+   t2.from("#coce", 
+{x:1000, 
+  rotation:90,
+   duration:2.7,
+   ease:"linear"
+  
+  },"<");
+
+   t2.from("#orange2",{
+   x:1000 ,
+   rotation:360,
+   duration:2.9,
+   delay:.1,
+   ease:"linear"
+   },"<");
+
+   t2.to("#orange-piece",{
+    width:"17%",
+  top:"210%",
+  left:"38%",
+  rotate:"360deg",
+  duration:3.3,
+  ease:"linear"
+},"<")
+
+
+
+   t2.to("#fanta",{
+     width:"15%",
+    top: "219%",
+    left: "42%",
+    duration:3,
+    ease:"linear"
+}, "<");
+
+t2.to("#leaf",{
+  top:"210%",
+  left:"83%",
+  duration:3,
+  rotate:"340deg"
+
+
+},"<")
+  </script>
+</body>
+</html>
